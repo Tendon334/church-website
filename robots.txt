@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bethesdamethodistmission.co.za/sitemap.xml

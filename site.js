@@ -17,7 +17,7 @@
     var dd = li.querySelector(":scope > .dropdown");
     if (!link || !dd) return;
     link.addEventListener("click", function (e) {
-      if (window.matchMedia("(max-width:1080px)").matches && !li.classList.contains("open")) {
+      if (window.matchMedia("(max-width:1280px)").matches && !li.classList.contains("open")) {
         e.preventDefault();
         document.querySelectorAll(".nav-links > li.open").forEach(function (o) { o.classList.remove("open"); });
         li.classList.add("open");

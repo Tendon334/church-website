@@ -29,7 +29,7 @@
   var autoTargets = document.querySelectorAll(
     ".card, .event-card, .detail-card, .service-card, .section-title, .section-sub, .notice-list li"
   );
-  autoTargets.forEach(function (el, i) { el.classList.add("reveal"); });
+  autoTargets.forEach(function (el) { el.classList.add("reveal"); });
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -72,6 +72,19 @@
       }
     });
   });
+
+  /* ---- Preselect contact form topic from ?topic= ---- */
+  var topicParam = new URLSearchParams(window.location.search).get("topic");
+  if (topicParam) {
+    var topicSel = document.querySelector('.contact-form select[name="topic"]');
+    if (topicSel) {
+      for (var i = 0; i < topicSel.options.length; i++) {
+        if (topicSel.options[i].text.toLowerCase() === topicParam.toLowerCase()) {
+          topicSel.selectedIndex = i; break;
+        }
+      }
+    }
+  }
 
   /* ---- Event countdown (homepage) ---- */
   var cd = document.getElementById("countdown");

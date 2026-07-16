@@ -381,3 +381,22 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
   box-shadow:0 8px 28px rgba(15,30,54,0.12);margin-top:2.5rem;
 }
 .map-wrap iframe{display:block;width:100%;height:380px;border:0;}
+
+/* ===== CONTACT FORM ===== */
+.contact-form{max-width:760px;margin:0 auto;}
+.contact-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:0 1.4rem;}
+@media(max-width:640px){.contact-form .form-row{grid-template-columns:1fr;}}
+.contact-form label{
+  display:block;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--navy);margin-bottom:1.3rem;
+}
+.contact-form input,.contact-form select,.contact-form textarea{
+  display:block;width:100%;margin-top:0.45rem;padding:0.8rem 1rem;
+  border:1px solid var(--border);border-radius:10px;
+  font-family:var(--ff-body);font-size:0.95rem;color:var(--text-dark);
+  background:var(--white);transition:border-color 0.2s,box-shadow 0.2s;
+}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{
+  outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,0.18);
+}
+.contact-form textarea{resize:vertical;min-height:130px;}

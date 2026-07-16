@@ -113,7 +113,51 @@
     </div>
   </div>
 </section>
-<section class="alt-bg">
+
+<!-- CONTACT FORM -->
+<section class="alt-bg" id="message">
+  <div class="section-inner">
+    <div class="section-label">Send Us a Message</div>
+    <h2 class="section-title">Write to <em>Bethesda</em></h2>
+    <p class="section-sub">Fill in the form below and your message will be emailed directly to the church office. We'll get back to you as soon as we can.</p>
+    <form class="contact-form" action="https://formsubmit.co/sbumagc@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New message via bethesdamethodistmission.co.za"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="https://bethesdamethodistmission.co.za/thanks.html"/>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+      <div class="form-row">
+        <label>Full Name *
+          <input type="text" name="name" required placeholder="Your name"/>
+        </label>
+        <label>Email *
+          <input type="email" name="email" required placeholder="you@example.com"/>
+        </label>
+      </div>
+      <div class="form-row">
+        <label>Phone
+          <input type="tel" name="phone" placeholder="Optional"/>
+        </label>
+        <label>Topic
+          <select name="topic">
+            <option>General enquiry</option>
+            <option>Plan a visit</option>
+            <option>Membership</option>
+            <option>Giving &amp; tithes</option>
+            <option>Prayer request</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </div>
+      <label>Message *
+        <textarea name="message" rows="6" required placeholder="How can we help?"></textarea>
+      </label>
+      <p class="center"><button type="submit" class="btn-primary" style="border:none;cursor:pointer;font-family:var(--ff-body);">Send Message</button></p>
+    </form>
+  </div>
+</section>
+
+<section>
   <div class="section-inner center">
     <div class="section-label">Stay Connected</div>
     <h2 class="section-title">Follow <em>Bethesda</em></h2>

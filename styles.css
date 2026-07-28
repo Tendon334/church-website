@@ -15,7 +15,7 @@
   --off-white:#F8F9FB;
   --text-dark:#1C2333;
   --text-mid:#4A5468;
-  --text-light:#8A93A6;
+  --text-light:#667085;
   --border:rgba(26,42,74,0.12);
   --ff-display:'Playfair Display',Georgia,serif;
   --ff-body:'DM Sans',sans-serif;
@@ -269,7 +269,7 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,0.7);padding:4rem 1.5r
 .social-link:hover{border-color:var(--gold);color:var(--gold-light);}
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;
-  display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;font-size:0.8rem;color:rgba(255,255,255,0.45);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;font-size:0.8rem;color:rgba(255,255,255,0.58);
 }
 
 /* ===== HOME HERO ===== */
@@ -506,13 +506,14 @@ html{scrollbar-color:var(--gold-bar) var(--navy-dark);}
 /* Banner strip: subtle gradient sheen */
 .banner-strip{background:linear-gradient(100deg,var(--gold-bar) 0%,var(--gold) 45%,var(--gold-light) 100%);}
 
-/* Table zebra + softer hover */
+/* Table zebra + softer hover (hover re-declared after zebra so it wins) */
 tbody tr:nth-child(even){background:rgba(26,42,74,0.025);}
 tbody tr{transition:background 0.15s;}
+tbody tr:hover,tbody tr:nth-child(even):hover{background:var(--gold-pale);}
 
-/* Footer links: underline slide */
-.footer-links a,.contact-line a{position:relative;}
-.footer-links a:hover{padding-left:4px;transition:padding 0.2s var(--ease),color 0.15s;}
+/* Footer links: gentle slide (transition on base so mouse-out animates too) */
+.footer-links a{transition:padding 0.2s var(--ease),color 0.15s;}
+.footer-links a:hover{padding-left:4px;}
 
 /* Nav dropdown: slightly softer entrance */
 .dropdown{transition:opacity 0.22s var(--ease),transform 0.22s var(--ease),visibility 0.22s;}
@@ -533,4 +534,10 @@ tbody tr{transition:background 0.15s;}
 @media(max-width:640px){
   .btn-primary,.btn-outline{padding:0.95rem 2rem;width:100%;max-width:340px;text-align:center;}
   .hero-ctas{flex-direction:column;align-items:center;}
+}
+
+/* Reduced motion: re-assert after v4 transform overrides */
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none;}
+  .card:hover,.event-card:hover,.service-card:hover,.btn-primary:hover,.btn-outline:hover{transform:none;}
 }

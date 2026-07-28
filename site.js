@@ -56,19 +56,34 @@
   document.querySelectorAll(".copy-btn").forEach(function (b) {
     b.addEventListener("click", function () {
       var text = b.getAttribute("data-copy") || "";
-      var done = function () {
-        var old = b.innerHTML;
-        b.classList.add("copied");
-        b.innerHTML = "&#10003; Copied";
-        setTimeout(function () { b.classList.remove("copied"); b.innerHTML = old; }, 2000);
+      if (b.dataset.busy) return;
+      b.dataset.busy = "1";
+      var done = function (ok) {
+        var old = b.getAttribute("data-label") || b.innerHTML;
+        b.setAttribute("data-label", old);
+        b.classList.toggle("copied", ok);
+        b.innerHTML = ok ? "&#10003; Copied" : "&#10007; Press Ctrl+C";
+        setTimeout(function () {
+          b.classList.remove("copied");
+          b.innerHTML = old;
+          b.removeAttribute("data-busy");
+          b.removeAttribute("data-label");
+        }, 2000);
+      };
+      var fallback = function () {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed"; ta.style.top = "-9999px";
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+        document.body.removeChild(ta);
+        done(ok);
       };
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(done);
+        navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
       } else {
-        var ta = document.createElement("textarea");
-        ta.value = text; document.body.appendChild(ta); ta.select();
-        try { document.execCommand("copy"); done(); } catch (e) {}
-        document.body.removeChild(ta);
+        fallback();
       }
     });
   });

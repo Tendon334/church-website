@@ -553,3 +553,12 @@ tbody tr:hover,tbody tr:nth-child(even):hover{background:var(--gold-pale);}
   }
   .page-hero::after{width:min(240px,58vw);opacity:0.05;}
 }
+
+/* Countdown: balanced 2x2 grid on phones (was 3 + a lone box) */
+@media(max-width:480px){
+  .countdown{
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:0.7rem;max-width:300px;margin-left:auto;margin-right:auto;
+  }
+  .countdown .cd-box{min-width:0;}
+}

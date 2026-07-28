@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Bethesda Methodist Mission, Circuit 902">
+  <ellipse cx="500" cy="500" rx="495" ry="480" fill="#222C5B"/>
+
+  <!-- top cross (outlined gold) -->
+  <g stroke="#D2A537" stroke-width="7" fill="none">
+    <path d="M 487 100 H 513 V 130 H 543 V 156 H 513 V 205 H 487 V 156 H 457 V 130 H 487 Z"/>
+  </g>
+
+  <!-- white swoosh under cross -->
+  <path d="M 255 262 Q 500 216 745 262" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- BETHESDA arched -->
+<text x="152.1" y="475.6" transform="rotate(-42.00 152.1 475.6)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">B</text>
+<text x="240.0" y="411.7" transform="rotate(-30.00 240.0 411.7)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">E</text>
+<text x="339.3" y="367.5" transform="rotate(-18.00 339.3 367.5)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">T</text>
+<text x="445.6" y="344.8" transform="rotate(-6.00 445.6 344.8)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">H</text>
+<text x="554.4" y="344.8" transform="rotate(6.00 554.4 344.8)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">E</text>
+<text x="660.7" y="367.5" transform="rotate(18.00 660.7 367.5)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">S</text>
+<text x="760.0" y="411.7" transform="rotate(30.00 760.0 411.7)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">D</text>
+<text x="847.9" y="475.6" transform="rotate(42.00 847.9 475.6)" font-family="Georgia, 'Times New Roman', serif" font-size="128" font-weight="bold" fill="#D2A537" text-anchor="middle" letter-spacing="0">A</text>
+
+  <!-- white square behind shell -->
+  <rect x="390" y="396" width="220" height="215" rx="6" fill="#FFFFFF" stroke="#111111" stroke-width="7"/>
+
+  <!-- shell -->
+  <path d="M 500 742 L 318.4 534.4 Q 273.2 499.3 332.6 485.3 Q 303.6 439.8 365.2 442.9 Q 355.6 391.9 412.7 411.6 Q 423.6 360.9 469.8 395.1 Q 500.0 350.1 530.2 395.1 Q 576.4 360.9 587.3 411.6 Q 644.4 391.9 634.8 442.9 Q 696.4 439.8 667.4 485.3 Q 726.8 499.3 681.6 534.4 Z" fill="#FFFFFF" stroke="#111111" stroke-width="9" stroke-linejoin="round"/>
+<line x1="500" y1="728" x2="332.6" y2="485.3" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500" y1="728" x2="365.2" y2="442.9" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500" y1="728" x2="412.7" y2="411.6" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500" y1="728" x2="469.8" y2="395.1" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500" y1="728" x2="530.2" y2="395.1" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500" y1="728" x2="587.3" y2="411.6" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500" y1="728" x2="634.8" y2="442.9" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="500" y1="728" x2="667.4" y2="485.3" stroke="#111111" stroke-width="5.5" stroke-linecap="round"/>
+
+  <!-- crosses on shell -->
+<path d="M 447.0 430 H 477.0 V 492.16 H 514.0 V 522.1600000000001 H 477.0 V 652 H 447.0 V 522.1600000000001 H 410.0 V 492.16 H 447.0 Z" fill="#C8102E"/>
+<path d="M 495.0 452 H 529.0 V 522.56 H 572.0 V 556.56 H 529.0 V 704 H 495.0 V 556.56 H 452.0 V 522.56 H 495.0 Z" fill="#111111"/>
+
+  <!-- METHODIST MISSION bottom arc -->
+<text x="34.4" y="555.8" transform="rotate(53.40 34.4 555.8)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">M</text>
+<text x="89.1" y="619.3" transform="rotate(45.11 89.1 619.3)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">E</text>
+<text x="144.9" y="668.6" transform="rotate(37.75 144.9 668.6)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">T</text>
+<text x="206.7" y="710.4" transform="rotate(30.38 206.7 710.4)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">H</text>
+<text x="273.2" y="743.8" transform="rotate(23.02 273.2 743.8)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">O</text>
+<text x="343.5" y="768.5" transform="rotate(15.65 343.5 768.5)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">D</text>
+<text x="399.9" y="781.3" transform="rotate(9.94 399.9 781.3)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">I</text>
+<text x="457.2" y="788.4" transform="rotate(4.23 457.2 788.4)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">S</text>
+<text x="531.7" y="789.1" transform="rotate(-3.13 531.7 789.1)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">T</text>
+<text x="658.3" y="768.0" transform="rotate(-15.83 658.3 768.0)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">M</text>
+<text x="721.6" y="746.0" transform="rotate(-22.46 721.6 746.0)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">I</text>
+<text x="773.8" y="721.3" transform="rotate(-28.17 773.8 721.3)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">S</text>
+<text x="837.1" y="682.0" transform="rotate(-35.54 837.1 682.0)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">S</text>
+<text x="882.4" y="646.1" transform="rotate(-41.24 882.4 646.1)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">I</text>
+<text x="923.9" y="605.9" transform="rotate(-46.95 923.9 605.9)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">O</text>
+<text x="971.1" y="548.3" transform="rotate(-54.32 971.1 548.3)" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">N</text>
+
+  <!-- CIRCUIT 902 -->
+  <text x="500" y="952" font-family="'Arial Black', 'DM Sans', Arial, sans-serif" font-size="42" font-weight="900" fill="#D2A537" text-anchor="middle" letter-spacing="3">CIRCUIT 902</text>
+</svg>

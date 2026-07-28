@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bethesda Methodist Mission//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:golfday2026@bethesdamethodistmission.co.za
+DTSTAMP:20260728T120000Z
+DTSTART;TZID=Africa/Johannesburg:20260813T070000
+DTEND;TZID=Africa/Johannesburg:20260813T180000
+SUMMARY:16th Annual Charity Golf Day — Bethesda Fountain of Healing
+LOCATION:The Country Club Johannesburg\, Woodmead
+DESCRIPTION:Fourballs\, individual players and dinner sponsorships available. Enquiries: golfday@bethesdafountainofhealing.co.za
+URL:https://bethesdamethodistmission.co.za/events.html#golf-day
+END:VEVENT
+END:VCALENDAR

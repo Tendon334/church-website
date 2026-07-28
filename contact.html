@@ -9,22 +9,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <meta name="description" content="Visit Bethesda Methodist Mission at 40-42 St. Johns Road, Houghton Estate, Johannesburg. Sunday services 07:30 and 09:00. Phone +27 11 487 1770."/>
 <meta name="theme-color" content="#1A2A4A"/>
+<meta name="referrer" content="strict-origin-when-cross-origin"/>
 <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <meta property="og:site_name" content="Bethesda Methodist Mission"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Contact Us — Bethesda Methodist Mission"/>
 <meta property="og:description" content="Visit Bethesda Methodist Mission at 40-42 St. Johns Road, Houghton Estate, Johannesburg. Sunday services 07:30 and 09:00. Phone +27 11 487 1770."/>
-<meta name="twitter:card" content="summary"/>
+<meta property="og:image" content="https://bethesdamethodistmission.co.za/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <link rel="canonical" href="https://bethesdamethodistmission.co.za/contact.html"/>
 <meta property="og:url" content="https://bethesdamethodistmission.co.za/contact.html"/>
 <link rel="stylesheet" href="styles.css"/>
+<link rel="manifest" href="manifest.webmanifest"/>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="top-bar"></div>
 <nav>
   <a href="index.html" class="nav-logo">
-    <div class="logo-mark">B</div>
+    <img src="logo.svg" alt="Bethesda Methodist Mission crest" class="logo-mark" width="50" height="50"/>
     <div class="logo-text"><strong>Bethesda Methodist Mission</strong><span>Circuit 902 &middot; Johannesburg</span></div>
   </a>
   <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
@@ -120,12 +126,12 @@
     <div class="section-label">Send Us a Message</div>
     <h2 class="section-title">Write to <em>Bethesda</em></h2>
     <p class="section-sub">Fill in the form below and your message will be emailed directly to the church office. We'll get back to you as soon as we can.</p>
-    <form class="contact-form" action="https://formsubmit.co/sbumagc@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New message via bethesdamethodistmission.co.za"/>
-      <input type="hidden" name="_template" value="table"/>
-      <input type="hidden" name="_captcha" value="false"/>
-      <input type="hidden" name="_next" value="https://bethesdamethodistmission.co.za/thanks.html"/>
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="f54b50d0-e770-4a60-a7bc-a3230cb5d50f"/>
+      <input type="hidden" name="subject" value="New message via bethesdamethodistmission.co.za"/>
+      <input type="hidden" name="from_name" value="Bethesda Website Contact Form"/>
+      <input type="hidden" name="redirect" value="https://bethesdamethodistmission.co.za/thanks.html"/>
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true"/>
       <div class="form-row">
         <label>Full Name *
           <input type="text" name="name" required placeholder="Your name"/>
@@ -174,7 +180,7 @@
     <div class="section-label">New Here?</div>
     <h2 class="section-title">Plan Your <em>Visit</em></h2>
     <p class="section-sub">Come as you are. Arrive a few minutes early, and our welcome team will help you find a seat and answer any questions.</p>
-    <a href="mailto:info@bethesdamethodist.co.za?subject=Planning a Visit" class="btn-primary">Let Us Know You're Coming</a>
+    <a href="contact.html?topic=Plan%20a%20visit#message" class="btn-primary">Let Us Know You're Coming</a>
   </div>
 </section>
 
@@ -183,6 +189,7 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
+        <img src="logo.svg" alt="" class="footer-badge" width="88" height="88" loading="lazy"/>
         <div class="logo">Bethesda Methodist Mission</div>
         <p>A place of healing, worship, and community in the heart of Houghton, Johannesburg. Serving our congregation and community since 1904.</p>
         <div class="social-links">

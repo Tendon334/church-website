@@ -38,11 +38,11 @@ nav{
 }
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
 .nav-logo .logo-mark{
-  width:44px;height:44px;border-radius:50%;
-  background:var(--gold);color:var(--navy-dark);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--ff-display);font-weight:700;font-size:1.05rem;letter-spacing:0.02em;
+  width:50px;height:50px;border-radius:50%;display:block;flex-shrink:0;
+  box-shadow:0 0 0 2px rgba(201,168,76,0.85),0 2px 8px rgba(0,0,0,0.3);
+  transition:transform 0.25s;
 }
+.nav-logo:hover .logo-mark{transform:scale(1.06);}
 .nav-logo .logo-text{line-height:1.2;}
 .nav-logo .logo-text strong{display:block;color:var(--white);font-size:0.95rem;font-weight:600;letter-spacing:0.02em;}
 .nav-logo .logo-text span{display:block;color:var(--gold-light);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;}
@@ -99,6 +99,8 @@ nav{
 .nav-toggle span{display:block;width:26px;height:2px;background:var(--white);margin:6px 0;transition:0.3s;}
 @media(max-width:1280px){
   nav{padding:0 1.25rem;flex-wrap:wrap;height:auto;min-height:64px;}
+  .nav-logo{padding:8px 0;}
+  .nav-logo .logo-mark{width:42px;height:42px;}
   .nav-toggle{display:block;}
   .nav-links{
     display:none;flex-direction:column;align-items:stretch;width:100%;
@@ -120,9 +122,11 @@ nav{
   padding:5rem 1.5rem 4.5rem;position:relative;overflow:hidden;
 }
 .page-hero::after{
-  content:"✦";position:absolute;font-size:14rem;color:rgba(201,168,76,0.06);
-  right:-2rem;top:-3rem;line-height:1;
+  content:"";position:absolute;width:340px;height:340px;
+  right:-70px;top:-50px;pointer-events:none;z-index:0;
+  background:url("logo.svg") no-repeat center/contain;opacity:0.07;
 }
+.page-hero>*{position:relative;z-index:1;}
 .page-hero .eyebrow{font-size:0.72rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:0.9rem;}
 .page-hero h1{font-family:var(--ff-display);font-size:clamp(2.1rem,5vw,3.2rem);font-weight:600;line-height:1.15;}
 .page-hero h1 em{font-style:italic;color:var(--gold-light);}
@@ -241,6 +245,10 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,0.7);padding:4rem 1.5r
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:2.5rem;margin-bottom:3rem;}
 @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:560px){.footer-grid{grid-template-columns:1fr;}}
+.footer-brand .footer-badge{
+  width:88px;height:88px;border-radius:50%;margin-bottom:1.1rem;
+  box-shadow:0 0 0 2px rgba(201,168,76,0.55),0 4px 14px rgba(0,0,0,0.35);
+}
 .footer-brand .logo{font-family:var(--ff-display);font-size:1.3rem;color:var(--white);margin-bottom:0.9rem;}
 .footer-brand p{font-size:0.9rem;line-height:1.7;}
 .footer-heading{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem;font-weight:700;}
@@ -272,6 +280,12 @@ footer{background:var(--navy-dark);color:rgba(255,255,255,0.7);padding:4rem 1.5r
   color:var(--white);text-align:center;
   padding:6.5rem 1.5rem 5.5rem;position:relative;overflow:hidden;
 }
+.hero::after{
+  content:"";position:absolute;width:440px;height:440px;
+  left:-110px;bottom:-110px;pointer-events:none;z-index:0;
+  background:url("logo.svg") no-repeat center/contain;opacity:0.055;
+}
+.hero>*{position:relative;z-index:1;}
 .hero .eyebrow{font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;}
 .hero h1{font-family:var(--ff-display);font-size:clamp(2.3rem,6vw,3.8rem);font-weight:600;line-height:1.12;max-width:820px;margin:0 auto;}
 .hero h1 em{font-style:italic;color:var(--gold-light);}
@@ -400,3 +414,40 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
   outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,0.18);
 }
 .contact-form textarea{resize:vertical;min-height:130px;}
+
+/* ============================================================
+   v3 UPGRADES — live banner, daily verse, nav shadow, print
+   ============================================================ */
+
+/* Nav elevation once scrolled */
+nav.scrolled{box-shadow:0 6px 20px rgba(15,30,54,0.35);}
+
+/* Live-service banner */
+.live-banner{
+  display:block;text-align:center;text-decoration:none;
+  background:linear-gradient(90deg,#8E1B26,#C0392B);color:#fff;
+  font-weight:700;font-size:0.9rem;letter-spacing:0.04em;
+  padding:0.7rem 1.5rem;
+}
+.live-banner:hover{background:linear-gradient(90deg,#A02230,#D64535);}
+.live-banner .live-dot{background:#fff;}
+
+/* Daily verse in hero */
+.daily-verse{
+  max-width:620px;margin:1.6rem auto 0;
+  font-family:var(--ff-display);font-style:italic;font-size:1.02rem;
+  color:var(--gold-light);line-height:1.65;
+}
+.daily-verse cite{font-style:normal;font-family:var(--ff-body);font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);display:block;margin-top:0.5rem;}
+
+/* Text selection in brand colours */
+::selection{background:var(--gold);color:var(--navy-dark);}
+
+/* Print: keep it clean (banking details, notices) */
+@media print{
+  nav,footer,.top-bar,.hero-ctas,#backTop,.nav-toggle,.copy-btn,.live-banner,.banner-strip,.social-links,.map-wrap,.video-wrap{display:none !important;}
+  .hero,.page-hero,.dark-section{background:#fff !important;color:#000 !important;}
+  .hero h1,.page-hero h1,.dark-section .section-title{color:#000 !important;}
+  section{padding:1.2rem 0;}
+  a{text-decoration:none;color:#000;}
+}

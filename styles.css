@@ -176,6 +176,16 @@ section{padding:4.5rem 1.5rem;}
 }
 .card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(26,42,74,0.12);border-color:rgba(201,168,76,0.5);}
 .card .card-icon{font-size:1.8rem;margin-bottom:0.9rem;}
+/* SVG icon tiles (replaces emoji) */
+.card .card-icon.icon-tile{
+  width:54px;height:54px;margin-bottom:1.1rem;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,var(--gold-pale),#fff);
+  border:1px solid rgba(201,168,76,0.4);color:var(--gold-bar);
+  transition:background 0.3s var(--ease),color 0.3s var(--ease),transform 0.3s var(--ease);
+}
+.card .card-icon.icon-tile svg{width:auto;height:27px;max-width:30px;display:block;}
+.card:hover .card-icon.icon-tile{background:var(--navy);color:var(--gold-light);border-color:var(--navy);transform:translateY(-2px);}
 .card h3{font-family:var(--ff-display);font-size:1.2rem;color:var(--navy);margin-bottom:0.5rem;}
 .card p{font-size:0.92rem;color:var(--text-mid);}
 .card .card-link{display:inline-block;margin-top:1rem;font-size:0.8rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold-bar);text-decoration:none;}
